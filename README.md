@@ -38,5 +38,27 @@ Handles the deployment, monitoring, and scaling of backend services. Sets up Doc
 ###  QA Engineer  
 Ensures backend functionalities are properly tested. This includes writing and running unit tests, integration tests, and performance tests to maintain high reliability and prevent regressions.
 
+## Technology Stack
+
+### 🐍 Django  
+A high-level Python web framework used to build the backend of the application. Django simplifies API development, handles routing, authentication, and integrates well with relational databases.
+
+### 🐘 PostgreSQL  
+An open-source relational database system that stores structured application data like users, listings, bookings, and reviews. It’s known for reliability, performance, and support for complex queries.
+
+### 🔎 GraphQL  
+A query language for APIs that allows clients to request exactly the data they need. It replaces traditional REST calls, reduces over-fetching, and improves frontend performance and flexibility.
+
+### 🐳 Docker  
+Used to containerize the application, making it easier to develop, deploy, and run consistently across different environments.
+
+### 💻 HTML, CSS, JavaScript  
+The core technologies for building the frontend of the application. They provide structure (HTML), styling (CSS), and interactivity (JavaScript) for the user interface.
+
+### 🔧 Git & GitHub  
+Used for version control and collaboration. Git tracks code changes, while GitHub hosts the repository and supports workflows like branching, pull requests, and reviews.
+
+### 🚀 GitHub Actions  
+A CI/CD tool that automates testing, building, and deploying the application whenever code changes are pushed to the repository.
 
 
