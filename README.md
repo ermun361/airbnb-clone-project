@@ -12,17 +12,6 @@ This project is a full-stack simulation of the Airbnb platform. It allows users 
 - Simulate industry-level application design with CI/CD and security measures.
 
 
-##  Technology Stack
-
-- **Django**: A high-level Python web framework used for building the RESTful API.
-- **Django REST Framework**: Provides tools for creating and managing RESTful APIs.
-- **PostgreSQL**: A powerful relational database used for data storage.
-- **GraphQL**: Allows for flexible and efficient querying of data.
-- **Celery**: For handling asynchronous tasks such as sending notifications or processing payments.
-- **Redis**: Used for caching and session management.
-- **Docker**: Containerization tool for consistent development and deployment environments.
-- **CI/CD Pipelines**: Automated pipelines for testing and deploying code changes.
-
 
 ##  Team Roles
 
@@ -38,28 +27,19 @@ Handles the deployment, monitoring, and scaling of backend services. Sets up Doc
 ###  QA Engineer  
 Ensures backend functionalities are properly tested. This includes writing and running unit tests, integration tests, and performance tests to maintain high reliability and prevent regressions.
 
-## Technology Stack
 
-### 🐍 Django  
-A high-level Python web framework used to build the backend of the application. Django simplifies API development, handles routing, authentication, and integrates well with relational databases.
 
-### 🐘 PostgreSQL  
-An open-source relational database system that stores structured application data like users, listings, bookings, and reviews. It’s known for reliability, performance, and support for complex queries.
+## TECHNOLOGY STACK
 
-### 🔎 GraphQL  
-A query language for APIs that allows clients to request exactly the data they need. It replaces traditional REST calls, reduces over-fetching, and improves frontend performance and flexibility.
+- **Django**: A high-level Python web framework used for building the RESTful API.
+- **Django REST Framework**: Provides tools for creating and managing RESTful APIs.
+- **PostgreSQL**: A powerful relational database used for data storage.
+- **GraphQL**: Allows for flexible and efficient querying of data.
+- **Celery**: For handling asynchronous tasks such as sending notifications or processing payments.
+- **Redis**: Used for caching and session management.
+- **Docker**: Containerization tool for consistent development and deployment environments.
+- **CI/CD Pipelines**: Automated pipelines for testing and deploying code changes.
 
-### 🐳 Docker  
-Used to containerize the application, making it easier to develop, deploy, and run consistently across different environments.
-
-### 💻 HTML, CSS, JavaScript  
-The core technologies for building the frontend of the application. They provide structure (HTML), styling (CSS), and interactivity (JavaScript) for the user interface.
-
-### 🔧 Git & GitHub  
-Used for version control and collaboration. Git tracks code changes, while GitHub hosts the repository and supports workflows like branching, pull requests, and reviews.
-
-### 🚀 GitHub Actions  
-A CI/CD tool that automates testing, building, and deploying the application whenever code changes are pushed to the repository.
 
 
 
@@ -155,6 +135,10 @@ Each review belongs to one user and one property.
 - `PUT /reviews/{review_id}/`  
 - `DELETE /reviews/{review_id}/`  
 
+
+
+
+
 ## 🚀 FEATURE BREAKDOWN
 
 The Airbnb Clone project replicates essential features of a real-world rental platform. Each feature is designed to provide a smooth experience for both property owners and guests.
@@ -178,6 +162,8 @@ Securely handles payments between guests and hosts using preferred payment metho
 Protects access to sensitive resources using token-based authentication. Ensures users only perform actions permitted by their roles (e.g., a guest can’t delete someone else’s property).
 
 
+
+
 ## 🔐 API SECURITY
 
 ### 🔑 Authentication  
@@ -199,6 +185,9 @@ Payment endpoints will use HTTPS and integrate with trusted third-party payment 
 
 ### 📜 Logging & Monitoring  
 Critical actions (like failed logins, payments, and booking changes) will be logged for auditing and anomaly detection. This helps detect and respond to suspicious activity.
+
+
+
 
 
 ## ⚙️ CI/CD PIPELINE
