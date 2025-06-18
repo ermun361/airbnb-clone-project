@@ -155,3 +155,24 @@ Each review belongs to one user and one property.
 - `PUT /reviews/{review_id}/`  
 - `DELETE /reviews/{review_id}/`  
 
+## 🚀 FEATURE BREAKDOWN
+
+The Airbnb Clone project replicates essential features of a real-world rental platform. Each feature is designed to provide a smooth experience for both property owners and guests.
+
+### 👤 User Management  
+Allows users to register, log in, and manage their profiles. This feature ensures secure access control and personalized user experiences based on account roles (e.g., host vs guest).
+
+### 🏘️ Property Management  
+Enables hosts to list, update, and delete properties. Property details include location, pricing, images, and descriptions. This forms the core inventory of the platform.
+
+### 📅 Booking System  
+Allows guests to search for available properties and make reservations for specific dates. The system manages date availability, booking conflicts, and payment integration.
+
+### 💬 Review System  
+After completing a stay, users can leave feedback and ratings. Reviews help build trust and transparency between hosts and guests, improving the platform’s credibility.
+
+### 💵 Payment Integration  
+Securely handles payments between guests and hosts using preferred payment methods. Ensures successful booking transactions while logging payment details for transparency.
+
+### 🔐 Authentication & Authorization  
+Protects access to sensitive resources using token-based authentication. Ensures users only perform actions permitted by their roles (e.g., a guest can’t delete someone else’s property).
