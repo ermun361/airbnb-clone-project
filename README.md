@@ -29,7 +29,7 @@ Ensures backend functionalities are properly tested. This includes writing and r
 
 
 
-## TECHNOLOGY STACK
+## Technology Stack
 
 - **Django**: A high-level Python web framework used for building the RESTful API.
 - **Django REST Framework**: Provides tools for creating and managing RESTful APIs.
@@ -43,7 +43,7 @@ Ensures backend functionalities are properly tested. This includes writing and r
 
 
 
-## 🗃️ DATABASE DESIGN
+## 🗃️ Data Design
 
 This section outlines the core data models (entities) of the Airbnb Clone project and how they relate to each other.
 
@@ -139,7 +139,7 @@ Each review belongs to one user and one property.
 
 
 
-## 🚀 FEATURE BREAKDOWN
+## 🚀 Feature Breakdown
 
 The Airbnb Clone project replicates essential features of a real-world rental platform. Each feature is designed to provide a smooth experience for both property owners and guests.
 
@@ -164,7 +164,7 @@ Protects access to sensitive resources using token-based authentication. Ensures
 
 
 
-## 🔐 API SECURITY
+## 🔐 API Security
 
 ### 🔑 Authentication  
 Only verified users should access protected resources.  This prevents unauthorized access to user profiles, bookings, and other sensitive endpoints.
@@ -190,7 +190,7 @@ Critical actions (like failed logins, payments, and booking changes) will be log
 
 
 
-## ⚙️ CI/CD PIPELINE
+## ⚙️ CI/CD Pipeline
 
 CI/CD (Continuous Integration and Continuous Deployment) pipelines automate the process of building, testing, and deploying code. They help reduce manual errors, speed up delivery, and ensure that new changes do not break existing features.
 
