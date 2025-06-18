@@ -43,7 +43,7 @@ Ensures backend functionalities are properly tested. This includes writing and r
 
 
 
-## 🗃️ Data Design
+## 🗃️ Database Design
 
 This section outlines the core data models (entities) of the Airbnb Clone project and how they relate to each other.
 
