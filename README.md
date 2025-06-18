@@ -176,3 +176,27 @@ Securely handles payments between guests and hosts using preferred payment metho
 
 ### 🔐 Authentication & Authorization  
 Protects access to sensitive resources using token-based authentication. Ensures users only perform actions permitted by their roles (e.g., a guest can’t delete someone else’s property).
+
+
+## 🔐 API SECURITY
+
+### 🔑 Authentication  
+Only verified users should access protected resources.  This prevents unauthorized access to user profiles, bookings, and other sensitive endpoints.
+
+### ✅ Authorization  
+Once authenticated, users should only be able to perform actions allowed by their role. For example, a guest should not be able to edit another user’s property. Role-based access control (RBAC) ensures proper permission management across the platform.
+
+
+### 📉 Rate Limiting  
+To prevent abuse and brute-force attacks, the API will implement rate limiting — restricting the number of requests a user/IP can make within a time frame. This helps mitigate DDoS attacks and API spamming.
+
+### 🧼 Input Validation & Sanitization  
+All incoming data will be validated and sanitized to avoid common vulnerabilities like SQL injection or cross-site scripting (XSS). This ensures the backend only processes safe and expected inputs.
+
+
+### 🔒 Secure Payments  
+Payment endpoints will use HTTPS and integrate with trusted third-party payment processors. Tokenization and encryption will be used to ensure payment data never lives in plain text on our servers.
+
+### 📜 Logging & Monitoring  
+Critical actions (like failed logins, payments, and booking changes) will be logged for auditing and anomaly detection. This helps detect and respond to suspicious activity.
+
