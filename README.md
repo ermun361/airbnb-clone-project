@@ -62,3 +62,96 @@ Used for version control and collaboration. Git tracks code changes, while GitHu
 A CI/CD tool that automates testing, building, and deploying the application whenever code changes are pushed to the repository.
 
 
+
+## 🗃️ DATABASE DESIGN
+
+This section outlines the core data models (entities) of the Airbnb Clone project and how they relate to each other.
+
+### 🔐 Users
+Stores data about people using the platform (both hosts and guests).
+- `id`: Unique user ID
+- `username`: Account handle
+- `email`: Contact email
+- `password_hash`: Encrypted password
+- `created_at`: Account creation timestamp
+
+**Relationships:**  
+A user can host multiple properties and make multiple bookings. A user can also write reviews and process payments.
+
+### 🏠 Properties
+Represents homes or apartments listed on the platform.
+- `id`: Unique property ID
+- `user_id`: Foreign key to the host (owner)
+- `title`: Listing title
+- `description`: Property details
+- `location`: City/country info
+- `price_per_night`: Cost of staying per night
+
+**Relationships:**  
+A property belongs to one host (user). It can have multiple bookings and reviews.
+
+### 📅 Bookings
+Captures reservation details made by guests.
+- `id`: Unique booking ID
+- `user_id`: Foreign key to the guest
+- `property_id`: Foreign key to the booked property
+- `start_date`: Check-in date
+- `end_date`: Check-out date
+
+**Relationships:**  
+A booking links a guest to a specific property. One property can have many bookings.
+
+### 💳 Payments
+Handles financial transactions related to bookings.
+- `id`: Unique payment ID
+- `booking_id`: Linked booking
+- `amount`: Total paid
+- `payment_method`: e.g., card, PayPal
+- `status`: Completed, Failed, etc.
+
+**Relationships:**  
+Each payment is tied to a specific booking.
+### ✍️ Reviews
+Feedback and ratings left by users after a stay.
+- `id`: Unique review ID
+- `user_id`: Reviewer
+- `property_id`: Reviewed listing
+- `rating`: Numerical score (e.g. 1–5)
+- `comment`: Optional feedback
+
+**Relationships:**  
+Each review belongs to one user and one property.
+
+## 🌐 REST API Endpoints (Planned)
+
+### Users
+- `GET /users/` — List all users  
+- `POST /users/` — Create a new user  
+- `GET /users/{user_id}/` — Get a specific user  
+- `PUT /users/{user_id}/` — Update user details  
+- `DELETE /users/{user_id}/` — Delete user  
+
+### Properties
+- `GET /properties/`  
+- `POST /properties/`  
+- `GET /properties/{property_id}/`  
+- `PUT /properties/{property_id}/`  
+- `DELETE /properties/{property_id}/`  
+
+### Bookings
+- `GET /bookings/`  
+- `POST /bookings/`  
+- `GET /bookings/{booking_id}/`  
+- `PUT /bookings/{booking_id}/`  
+- `DELETE /bookings/{booking_id}/`  
+
+### Payments
+- `POST /payments/` — Process a payment  
+
+### Reviews
+- `GET /reviews/`  
+- `POST /reviews/`  
+- `GET /reviews/{review_id}/`  
+- `PUT /reviews/{review_id}/`  
+- `DELETE /reviews/{review_id}/`  
+
