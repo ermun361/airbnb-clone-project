@@ -200,3 +200,26 @@ Payment endpoints will use HTTPS and integrate with trusted third-party payment 
 ### 📜 Logging & Monitoring  
 Critical actions (like failed logins, payments, and booking changes) will be logged for auditing and anomaly detection. This helps detect and respond to suspicious activity.
 
+
+## ⚙️ CI/CD PIPELINE
+
+CI/CD (Continuous Integration and Continuous Deployment) pipelines automate the process of building, testing, and deploying code. They help reduce manual errors, speed up delivery, and ensure that new changes do not break existing features.
+
+In a collaborative project like this Airbnb Clone, CI/CD ensures that:
+- Code is automatically tested before merging to the main branch.
+- Deployment happens consistently across environments (dev, staging, production).
+- Bugs and regressions are caught early through automated checks.
+
+### 🧰 Tools We Can Use
+
+- **GitHub Actions**: Automates workflows like running tests, linting code, and deploying to servers or cloud platforms when code is pushed.
+- **Docker**: Containerizes the application, making it portable and consistent across environments.
+- **Heroku / AWS / DigitalOcean**: Can be used as deployment platforms that work seamlessly with GitHub Actions.
+- **PostgreSQL (Cloud-hosted)**: To maintain consistent production-ready databases for staging and live apps.
+
+### 🛠️ Sample CI/CD Flow
+1. Developer pushes code to GitHub  
+2. GitHub Actions runs unit tests and lint checks  
+3. If all checks pass, Docker builds the app  
+4. App is deployed to Heroku or another platform  
+5. Slack/Email notifications can alert the team of success/failure
